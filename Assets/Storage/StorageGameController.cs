@@ -6,9 +6,9 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-public class GameController : MonoBehaviour {
+public class StorageGameController : MonoBehaviour {
 
-	public static GameController gCtrl;
+	public static StorageGameController gCtrl;
 
 	public int highScore = 0;
 	public Font hsFont;
@@ -82,9 +82,3 @@ public class GameController : MonoBehaviour {
 		}
 	}
 }
-
-[Serializable]
-class GameData
-{
-	public int score;
-};
